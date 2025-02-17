@@ -154,7 +154,8 @@ tools = [
 ]
 
 # Initialize the AI model
-model = OllamaFunctions(model="llama3:8b-instruct-q8_0",
+# model = OllamaFunctions(model="llama3:8b-instruct-q8_0",
+model = OllamaFunctions(model="deepseek-r1:8b",
                         format="json", temperature=0)
 model = model.bind_tools(tools=tools)
 
